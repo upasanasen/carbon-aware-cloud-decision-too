@@ -43,7 +43,12 @@ kwh_month = st.sidebar.number_input(
 )
 
 pue = st.sidebar.slider("PUE", 1.0, 2.0, DEFAULT_PUE, step=0.01)
-carbon_price = st.sidebar.number_input("Internal carbon price (€/tCO₂e)", 0.0, DEFAULT_CARBON_PRICE, step=10.0)
+carbon_price = st.sidebar.number_input(
+    "Internal carbon price (€/tCO₂e)",
+    min_value=0.0,
+    value=float(DEFAULT_CARBON_PRICE),
+    step=10.0
+)
 
 result = compute(df, kwh_month, pue, carbon_price)
 
