@@ -240,7 +240,17 @@ st.dataframe(
     ),
     use_container_width=True
 )
+# --------------------------
+# CSV EXPORT
+# --------------------------
+csv_data = result.to_csv(index=False).encode("utf-8")
 
+st.download_button(
+    label="Download results as CSV",
+    data=csv_data,
+    file_name="carbon_aware_cloud_results.csv",
+    mime="text/csv"
+)
 # --------------------------
 # METHODOLOGY
 # --------------------------
