@@ -96,6 +96,13 @@ carbon_price = st.sidebar.number_input(
     step=10.0
 )
 
+scenario_carbon_price = st.sidebar.slider(
+    "Scenario carbon price (€/tCO₂e)",
+    min_value=50.0,
+    max_value=250.0,
+    value=150.0,
+    step=10.0
+)
 # --------------------------
 # COMPUTE RESULTS
 # --------------------------
