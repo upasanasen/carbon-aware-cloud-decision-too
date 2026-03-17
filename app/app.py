@@ -120,6 +120,10 @@ worst = result.iloc[-1]
 
 savings_tco2e = float(worst["annual_tco2e"] - best["annual_tco2e"])
 savings_eur = float(savings_tco2e * carbon_price)
+# Scenario carbon price impact
+scenario_cost_best = float(best["annual_tco2e"] * scenario_carbon_price)
+scenario_cost_worst = float(worst["annual_tco2e"] * scenario_carbon_price)
+scenario_cost_difference = scenario_cost_worst - scenario_cost_best
 
 # --------------------------
 # KPI CARDS
@@ -130,6 +134,38 @@ c2.metric("Annual Savings (vs highest)", f"{savings_tco2e:.2f} tCO₂e")
 c3.metric("Avoided Carbon Cost", f"€{savings_eur:,.0f}")
 
 st.divider()
+# -------------------------------
+# Carbon Price Scenario Impact
+# -------------------------------
+
+st.subheader("Carbon Price Scenario Impact")
+
+scenario_result = compute(df, kwh_month, pue, scenario_carbon_price)
+
+scenario_best = scenario_result.iloc[0]
+scenario_worst = scenario_result.iloc[-1]
+
+scenario_cost_best = float(scenario_best["annual_carbon_cost_eur"])
+scenario_cost_worst = float(scenario_worst["annual_carbon_cost_eur"])
+
+scenario_cost_difference = scenario_cost_worst - scenario_cost_best
+
+c4, c5, c6 = st.columns(3)
+
+c4.metric(
+    "Scenario Price",
+    f"€{scenario_carbon_price:.0f}/tCO₂e"
+)
+
+c5.metric(
+    "Best Region Carbon Cost",
+    f"€{scenario_cost_best:,.0f}"
+)
+
+c6.metric(
+    "Avoided Cost Under Scenario",
+    f"€{scenario_cost_difference:,.0f}"
+)
 
 # --------------------------
 # MAP VISUALIZATION
