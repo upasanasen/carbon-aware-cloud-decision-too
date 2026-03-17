@@ -58,8 +58,8 @@ df["longitude"] = pd.to_numeric(df["longitude"], errors="coerce")
 # --------------------------
 # HEADER
 # --------------------------
-st.title("🎯 Carbon-Aware Cloud Deployment Decision Tool (v1)")
-st.caption("Decision-support for sustainability managers evaluating carbon-aware cloud region strategies.")
+st.title("Carbon-Aware Cloud Deployment Strategy Tool")
+st.caption("Multi-cloud decision-support system for evaluating carbon-aware cloud infrastructure strategies.")
 
 # --------------------------
 # SIDEBAR INPUTS
