@@ -65,6 +65,10 @@ st.caption("Decision-support for sustainability managers evaluating carbon-aware
 # SIDEBAR INPUTS
 # --------------------------
 st.sidebar.header("Workload Parameters")
+provider_filter = st.sidebar.selectbox(
+    "Cloud Provider",
+    ["All", "AWS", "Azure", "GCP"]
+)
 
 preset = st.sidebar.selectbox("Workload preset", list(WORKLOAD_PRESETS.keys()))
 
@@ -95,7 +99,14 @@ carbon_price = st.sidebar.number_input(
 # --------------------------
 # COMPUTE RESULTS
 # --------------------------
-result = compute(df, kwh_month, pue, carbon_price)
+# Apply provider filter
+filtered_df = df.copy()
+
+if provider_filter != "All":
+    filtered_df = filtered_df[filtered_df["provider"] == provider_filter]
+
+# Compute emissions
+result = compute(filtered_df, kwh_month, pue, carbon_price)
 
 best = result.iloc[0]
 worst = result.iloc[-1]
