@@ -4,3 +4,11 @@ AWS,eu-west-3,Paris (eu-west-3),France,55,2023,generation-based,EEA,https://www.
 AWS,eu-west-1,Dublin (eu-west-1),Ireland,295,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,53.3498,-6.2603
 AWS,eu-central-1,Frankfurt (eu-central-1),Germany,385,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,50.1109,8.6821
 AWS,eu-south-1,Milan (eu-south-1),Italy,230,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,45.4642,9.1900
+Azure,swedencentral,Sweden Central,Sweden,12,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,59.3293,18.0686
+Azure,northeurope,North Europe (Ireland),Ireland,295,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,53.3498,-6.2603
+Azure,westeurope,West Europe (Netherlands),Netherlands,180,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,52.3676,4.9041
+Azure,germanywestcentral,Germany West Central,Germany,385,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,50.1109,8.6821
+GCP,europe-north1,Finland (europe-north1),Finland,67,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,60.1699,24.9384
+GCP,europe-west1,Belgium (europe-west1),Belgium,153,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,50.8503,4.3517
+GCP,europe-west3,Frankfurt (europe-west3),Germany,385,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,50.1109,8.6821
+GCP,europe-west4,Netherlands (europe-west4),Netherlands,180,2023,generation-based,EEA,https://www.eea.europa.eu/en/analysis/indicators/greenhouse-gas-emission-intensity-of-1,52.3676,4.9041
