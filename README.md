@@ -1,6 +1,8 @@
-# Carbon-Aware Cloud Deployment Decision Tool (v1)
+# Carbon-Aware Cloud Deployment Decision Tool (V2)
 
-A decision-support system for corporate sustainability teams to optimize cloud region selection using **Scope 2 location-based** emission factors and **internal carbon pricing**.
+A decision-support system for sustainability and cloud strategy teams to evaluate carbon-aware deployment across major cloud providers.
+
+The tool compares cloud regions using electricity grid carbon intensity, data center efficiency, and internal carbon pricing to help organizations choose lower-emission infrastructure locations.
 
 ✅ Live app: https://carbon-aware-cloud-tool.streamlit.app
 
@@ -15,6 +17,14 @@ Sustainability teams need a simple way to quantify:
 - **Avoided emissions** by switching to a lower-carbon region
 - **Carbon cost exposure** using an internal carbon price (€ / tCO₂e)
 
+As AI workloads and cloud computing expand rapidly, the location of compute infrastructure has a significant impact on Scope 2 emissions.
+
+This tool demonstrates how sustainability teams can integrate carbon-aware decision-making into infrastructure strategy, supporting:
+
+- Internal carbon pricing
+- EU ETS cost modeling
+- ESG reporting and decarbonization planning
+- Sustainable cloud architecture
 ---
 
 ## What the tool does
@@ -29,6 +39,14 @@ Sustainability teams need a simple way to quantify:
 - **Annual savings vs highest-intensity region**
 - **Avoided carbon cost**
 - Regional comparison chart
+
+## New in Version 2
+
+- Multi-cloud comparison (AWS, Azure, GCP)
+- Cloud provider filtering
+- Carbon price scenario analysis
+- CSV export for sustainability reporting
+- Interactive emissions map across Europe
 
 ---
 
